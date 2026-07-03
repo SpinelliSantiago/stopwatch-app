@@ -9,26 +9,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Oxanium", sans-serif;
 }
 
 main{
     position: relative;
     z-index: 1;
-    
 }
 
 body::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    background: linear-gradient(225deg,#151414,#1e1d1d,#2d2c2c,#1c1a1a,#1e1d1d, #181818);
 }
 
 h1{
-    font-size: 8rem;
-    color: #f5dbff;
+    font-size: 14rem;
+    margin: 50px 0 30px 0;
+    color: #fff691;
 }
 
 .contenedor{
@@ -43,23 +42,25 @@ button{
     font-size: 1.5rem;
     border: none;
     border-radius: 5px;
-    background-color: #fc3a77;
-    color: #f5dbff;
+    border: 1px solid #514a00;
+    background-color: #1f1f1f;
+    color: #fff691;
+    transition: 0.1s;
 }
 
 button:hover{
-    background-color: #f6185e;
-    color: aliceblue;
+    background-color: #0b0b0b;
+    transform: translateY( -8px);
 } 
 
 button:active{
-    background-color: #f36995;
-    color: white;
+    background-color: #fff691;
+    color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     h1{
-        font-size: 8rem;
+        font-size: 11rem;
     }
 
     .contenedor{
@@ -73,9 +74,10 @@ button:active{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     h1{
-        font-size: 5rem;
+        font-size: 6rem;
+        margin: 50px 0 60px 0;
     }
 
     .contenedor{
@@ -85,6 +87,6 @@ button:active{
     }
 
     button{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
